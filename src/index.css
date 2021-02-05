@@ -1,13 +1,350 @@
-body {
+
+/* General stuff */
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Mobile {
+  display: none;
+}
+
+.Desktop {
+  display: none;
+}
+
+body {
+  background-color: #EF6C6D;
+}
+
+@font-face {
+  font-family: normal;
+  src: url(./fonts/normal.ttf);
+}
+
+@font-face {
+  font-family: heading;
+  src: url(./fonts/bold.ttf);
+}
+
+/* Mobile Header */
+
+.mobile-header-div {
+  height: 10vh;
+  border-bottom: 3px solid #C6C6C6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+  background-color: #EF6C6D;
+}
+
+.my-portfolio-heading {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  padding-left: 2vw;
+  color: white;
+}
+
+.menu-button {
+  height: 10vh;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-header-h1 {
+  font-family: heading;
+}
+
+.button-m {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url(./images/menu.png);
+  border: none;
+  outline: none;
+}
+
+/* Mobile div 1 */
+
+.mobile-div-1 {
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  left: 0;
+  top: 10vh;
+  background-color: #EF6C6D;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simon-ugor-heading {
+  margin-top: 1vh;
+  color: white;
+  font-family: heading;
+}
+
+.simon-ugor-caption {
+  color: white;
+  font-family: heading;
+}
+
+.div1-button {
+  width: 60vw;
+  height: 9vh;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #C6C6C6;
+  color: white;
+  font-family: normal;
+  font-size: 3.5vh;
+  margin-top: 3vh;
+}
+
+.div1-button:active {
+  background-color: gray;
+}
+
+.div1-buttons-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-button {
+  width: 30vw;
+  height: 9vh;
+  padding: 0;
+  outline: none;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-family: normal;
+  font-size: 3vh;
+  margin-top: 3vh;
+}
+
+.project-button:active {
+  background-color: #d36060;
+}
+
+/* Mobile div 2 */
+
+.mobile-div-2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 100vh;
+  left: 0;
+  background-color: #EF6C6D;
+  text-align: center;
+}
+
+.div-heading {
+  margin-top: 1vh;
+  font-family: heading;
+  color: white;
+}
+
+.div-heading2 {
+  font-family: heading;
+  color: white;
+  font-size: 3vh;
+}
+
+.description-p {
+  margin-top: 1vh;
+  font-family: normal;
+  color: white;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 2vh;
+}
+
+/* Mobile div 3 */
+
+.mobile-div-3 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 200vh;
+  left: 0;
+  background-color: #EF6C6D;
+  text-align: center;
+}
+
+/* Mobile div 4 */
+
+.mobile-div-4 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 300vh;
+  left: 0;
+  background-color: #EF6C6D;
+  text-align: center;
+}
+
+/* Mobile Menu */
+
+.menu-div {
+  position: fixed;
+  right: 0;
+  top: 0vh;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+  font-family: heading;
+  font-size: 7vw;
+  text-align: left;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-div {
+  text-align: right;
+  padding-right: 3vh;
+}
+
+.x-button {
+  font-family: normal;
+  font-size: 4vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin-top: 2vh;
+  color: black;
+  margin-bottom: 2vh;
+}
+
+.list-element {
+  padding-left: 3vh;
+  margin-top: 3vh;
+  list-style-type: none;
+  text-decoration: none;
+  color: #EF6C6D;
+}
+
+.link-menu {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Mobile About Me */
+
+.about-me-caption {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: normal;
+  font-size: 3vh;
+  color: white;
+}
+
+/* Mobile Contact Me */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-input {
+  width: 85vw;
+  height: 3.5vh;
+  padding-left: 2vw;
+  margin-bottom: 2vh;
+  border: 2px solid #C6C6C6;
+  border-radius: 5px;
+  font-family: normal;
+  background-color: #EF6C6D;
+  outline: none;
+  color: white;
+}
+
+.contact-textarea {
+  width: 85vw;
+  height: 18vh;
+  max-width: 85vw;
+  max-height: 18vh;
+  min-width: 85vw;
+  min-height: 18vh;
+  border: 2px solid #C6C6C6;
+  padding-left: 2vw;
+  border-radius: 5px;
+  background-color: #EF6C6D;
+  font-family: normal;
+  outline: none;
+  color: white;
+}
+
+.contact-input::placeholder, .contact-textarea::placeholder {
+  color: white;
+}
+
+.contact-input:focus, .contact-textarea:focus {
+  border-color: gray;
+}
+
+.email-sending-div {
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
+  height: 90vh;
+  background-color: rgb(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.email-sending-content-div {
+  width: 80vw;
+  height: 10vh;
+  margin-top: 20vh;
+  background-color: white;
+  border-radius: 5px;
+  background-color: #C6C6C6;
+  color: white;
+  font-family: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (orientation: landscape) {
+  .Desktop {
+    display: block;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .Mobile {
+    display: block;
+  }
 }
