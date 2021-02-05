@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/myportfolioX/static/css/main.276bec97.chunk.css",
+    "main.js": "/myportfolioX/static/js/main.add38ae3.chunk.js",
+    "main.js.map": "/myportfolioX/static/js/main.add38ae3.chunk.js.map",
+    "runtime-main.js": "/myportfolioX/static/js/runtime-main.85aed0d9.js",
+    "runtime-main.js.map": "/myportfolioX/static/js/runtime-main.85aed0d9.js.map",
+    "static/js/2.8c4691d4.chunk.js": "/myportfolioX/static/js/2.8c4691d4.chunk.js",
+    "static/js/2.8c4691d4.chunk.js.map": "/myportfolioX/static/js/2.8c4691d4.chunk.js.map",
+    "static/js/3.4b62c4e0.chunk.js": "/myportfolioX/static/js/3.4b62c4e0.chunk.js",
+    "static/js/3.4b62c4e0.chunk.js.map": "/myportfolioX/static/js/3.4b62c4e0.chunk.js.map",
+    "index.html": "/myportfolioX/index.html",
+    "static/css/main.276bec97.chunk.css.map": "/myportfolioX/static/css/main.276bec97.chunk.css.map",
+    "static/js/2.8c4691d4.chunk.js.LICENSE.txt": "/myportfolioX/static/js/2.8c4691d4.chunk.js.LICENSE.txt",
+    "static/media/CVen.7ec6f22a.pdf": "/myportfolioX/static/media/CVen.7ec6f22a.pdf",
+    "static/media/CVsk.baa37468.pdf": "/myportfolioX/static/media/CVsk.baa37468.pdf",
+    "static/media/index.css": "/myportfolioX/static/media/normal.9459b298.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85aed0d9.js",
+    "static/js/2.8c4691d4.chunk.js",
+    "static/css/main.276bec97.chunk.css",
+    "static/js/main.add38ae3.chunk.js"
+  ]
+}
